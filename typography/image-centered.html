@@ -10,8 +10,6 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <style>
 
@@ -30,6 +28,7 @@
             width: 425px;
             height: auto;
             z-index: 999;
+            max-width: 425px;
             font-size: 28px;
         }
 
@@ -51,7 +50,6 @@
             margin: 30px -15px 30px 30px;
             background-color: #f3f3f3;
             padding: 40px;
-            height: 380px;
         }
 
         .col-right .shape {
@@ -67,7 +65,6 @@
             margin: 30px 30px 30px -15px;
             background-color: #f3f3f3;
             padding: 40px;
-            height: 380px;
         }
 
         p {
@@ -79,6 +76,28 @@
 
 
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            var pullQuote = $('.pull-quote');
+            var pullQuoteHeight = pullQuote.height();
+            var shapeHeight = pullQuoteHeight + 160;
+            var shapeInnerHeight = pullQuoteHeight + 100;
+
+            $('.shape').css('height', shapeHeight + 'px');
+            $('.shape div').css('height', shapeInnerHeight + 'px');
+
+
+        });
+
+
+
+
+    </script>
 </head>
 <body>
 
@@ -88,7 +107,7 @@
 
 
     <div class="row row-pull-quote">
-        <div class="pull-quote">"Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."</div>
+        <div class="pull-quote">"Fantastic work! We hired Gilmour Craves to redesign our website to help build the HemaCare brand and create a user-friendly quoting solution.  "</div>
         <div class="col-md-6 col-left">
             <div class="shape"><div></div></div>
             <p>Subway tile kitsch intelligentsia sartorial everyday carry mixtape cray beard ramps vinyl hella. Hella ethical keytar literally messenger bag, vice microdosing yr green juice vaporware single-origin coffee lyft selvage viral. Paleo vape swag disrupt 8-bit mlkshk hashtag fixie. Activated charcoal microdosing taiyaki shoreditch ennui tofu taxidermy, seitan fixie venmo meh yr forage. Cronut whatever aesthetic, chillwave forage vape jean shorts dreamcatcher quinoa roof party shoreditch williamsburg everyday carry. Polaroid kickstarter pork belly master cleanse mlkshk, brunch pitchfork heirloom trust fund tacos kombucha keytar mustache salvia brooklyn. Lyft activated charcoal venmo affogato raclette deep v green juice.Subway tile kitsch intelligentsia sartorial everyday carry mixtape cray beard ramps vinyl hella. Hella ethical keytar literally messenger bag, vice microdosing yr green juice vaporware single-origin coffee lyft selvage viral. Paleo vape swag disrupt 8-bit mlkshk hashtag fixie. Activated charcoal microdosing taiyaki shoreditch ennui tofu taxidermy, seitan fixie venmo meh yr forage. Cronut whatever aesthetic, chillwave forage vape jean shorts dreamcatcher quinoa roof party shoreditch williamsburg everyday carry. Polaroid kickstarter pork belly master cleanse mlkshk, brunch pitchfork heirloom trust fund tacos kombucha keytar mustache salvia brooklyn. Lyft activated charcoal venmo affogato raclette deep v green juice.</p>
